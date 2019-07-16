@@ -1,5 +1,13 @@
 We have to write TestCases for the following problems 
 
+4.Write a program to read the content of a text file, convert the content in upper case
+and print the same in console along with the length of the file.
+
+
+5.Write a boolean method called isEven() in a class called EvenNumTest, which takes
+an int as input and returns true if the input is even. The signature of the method is as
+follows: public static boolean isEven(int number)
+
 6.Write a program, which reads number of students and n grades as input (of int
 between 0 and 100, inclusive) and displays the average, minimum and maximum.Your
 program shall check for valid input. You should keep all the grades in an int[] and use a
@@ -41,21 +49,6 @@ The factorial of 21 is out of range.
 
 
 
-8.Write a program to find all files of a folder and select only given extention fileName and
-read content of this file using byte array
 
-
-9.Write a program to calculate the frequency of the words in a given file,
-
-Example: Create a file named.FileDemo.txt with the following content
-
-i am a man ,
-i like to sleep ,
-i have a home.
-Output: i->3 times,
-am-1,
-like -1,
-have -1,
-a-2 etc.,
 
 
