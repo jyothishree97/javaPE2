@@ -30,16 +30,17 @@ public class FileContentTest {
 
     @Test
     public void givenFileContentShouldReturnInUpperCases(){
+        //given the pathname
         File file = new File("/home/desktop/java_practice.txt");
-        int length=
         //assert
         assertEquals("THE CONTENT SHOULD BE IN UPPER CASES",fileContent.getUpperCase(file.getAbsolutePath()));
     }
     @Test
     public void givenFileContentShouldReturnError(){
+        //given the pathname
         File file =new File("home/desktop");
         //assert
-        assertEquals("Give the valid path of file",fileContent.getUpperCase(file.getAbsolutePath()));
+        assertEquals("Give valid path ",fileContent.getUpperCase(file.getAbsolutePath()));
     }
 
 }

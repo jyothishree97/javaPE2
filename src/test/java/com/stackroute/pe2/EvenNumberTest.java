@@ -36,5 +36,11 @@ public class EvenNumberTest {
         result=evenNumber.isEven(num);
         assertEquals("The given number is Even",false,result);
     }
+    @Test
+    public void givenNumberShouldReturnError(){
+        int num=-21;
+        result=evenNumber.isEven(num);
+        assertEquals("Give the valid input",result);
+    }
 
 }

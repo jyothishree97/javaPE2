@@ -29,9 +29,9 @@ public class FactorialTest {
 
     @Test
     public void givenNumberShouldReturnTheFactorialOfNumber(){
-        //act
+        //Intialization
         int num=5;
-        //arrange
+        //For Integer Variables
         int actualResult=factorial.factorialNumber(num);
         int expectedResult=120;
         //assert
@@ -40,8 +40,9 @@ public class FactorialTest {
 
     @Test
     public void givenNumberShouldReturnGreaterThanZer0(){
-        //act
+        //Intialization
         int num=0;
+        //For Integer Variables
         int actualResult=factorial.factorialNumber(num);
         int expectedResult=0;
         //assert
@@ -50,7 +51,9 @@ public class FactorialTest {
 
     @Test
     public  void givenNumberShouldReturnOutOfRange(){
+        //Intialization
         int num=13;
+        //Method for Integer variables
         int actualRseult=factorial.factorialNumber(num);
         //assert
         assertEquals("out of range",actualRseult);
@@ -58,7 +61,9 @@ public class FactorialTest {
 
     @Test
     public  void givenNumberShouldReturnFactorialForLongInt(){
+        //Intialization
         int num=20;
+        //For Max_value
         int actualResult=factorial.longFactorial(num);
         BigInteger expectedResult=new BigInteger("2432902008176640000");
         //assert
@@ -67,8 +72,9 @@ public class FactorialTest {
 
     @Test
     public void givenNumberShouldReturnOutOfRangeForLongInt(){
-        //act
+        //Intialization
         int num=21;
+        //For Max_Value
         int actualResult=factorial.longFactorial(num);
         //assert
         assertEquals("out of range",actualResult);

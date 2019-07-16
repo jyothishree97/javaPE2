@@ -24,7 +24,7 @@ public class GradesTest{
         grades = null;
 
     }
-
+    //checking of lowest grade
     @Test
     public  void givenInputShouldReturnHighestGrade(){
         //act
@@ -35,24 +35,33 @@ public class GradesTest{
         assertNotEquals(39,actualResult);
     }
 
+    //Checking of Highest grade
     @Test
     public  void givenInputShouldReturnLowestGrade(){
         //act
         int inputArray[]={67,79,39,90};
-        //arrange
         int actualResult=grades.calculateGrades(inputArray);
         //asserts
         assertEquals(39,actualResult);
     }
 
+    //checking of average grades
     @Test
     public  void givenInputShouldReturnAverage(){
         //act
         int inputArray[]={25,25,25,25};
-        //arrange
         int actualResult=grades.calculateGrades(inputArray);
         //assert
         assertEquals(25,actualResult);
+    }
+
+
+    //checking for valid inputs
+    @Test
+    public void  givenInputShouldReturnError(){
+        int inputArray[]={25,-90,45,66};
+        int actualResult=grades.calculateGrades(inputArray);
+        assertEquals("Give the valid Input",actualResult);
     }
 
 
