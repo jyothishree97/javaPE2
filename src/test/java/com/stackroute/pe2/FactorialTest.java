@@ -29,39 +29,39 @@ public class FactorialTest {
 
     @Test
     public void givenNumberShouldReturnTheFactorialOfNumber(){
-        int n=5;
-        int actualResult=factorial.factorialNumber(n);
+        int num=5;
+        int actualResult=factorial.factorialNumber(num);
         int expectedResult=120;
         assertEquals(expectedResult,actualResult);
     }
 
     @Test
     public void givenNumberShouldReturnGreaterThanZer0(){
-        int n=0;
-        int actualResult=factorial.factorialNumber(n);
+        int num=0;
+        int actualResult=factorial.factorialNumber(num);
         int expectedResult=0;
         assertEquals(expectedResult,actualResult);
     }
 
     @Test
     public  void givenNumberShouldReturnOutOfRange(){
-        int n=13;
-        int actualRseult=factorial.factorialNumber(n);
+        int num=13;
+        int actualRseult=factorial.factorialNumber(num);
         assertEquals("out of range",actualRseult);
     }
 
     @Test
     public  void givenNumberShouldReturnFactorialForLongInt(){
-        int n=20;
-        int actualResult=factorial.longFactorial(n);
+        int num=20;
+        int actualResult=factorial.longFactorial(num);
         BigInteger expectedResult=new BigInteger("2432902008176640000");
         assertEquals(expectedResult,actualResult);
     }
 
     @Test
     public void givenNumberShouldReturnOutOfRangeForLongInt(){
-        int n=21;
-        int actualResult=factorial.longFactorial(n);
+        int num=21;
+        int actualResult=factorial.longFactorial(num);
         assertEquals("out of range",actualResult);
     }
 

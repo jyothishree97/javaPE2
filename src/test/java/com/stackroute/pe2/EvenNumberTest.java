@@ -26,21 +26,15 @@ public class EvenNumberTest {
     }
     @Test
     public  void givenNumberShouldReturnEven(){
-        int n=24;
-        result=evenNumber.isEven(n);
+        int num=24;
+        result=evenNumber.isEven(num);
         assertEquals("The given number is Even",true,result);
     }
     @Test
     public  void givenNumberShouldReturnNotEven(){
-        int n=23;
-        result=evenNumber.isEven(n);
+        int num=23;
+        result=evenNumber.isEven(num);
         assertEquals("The given number is Even",false,result);
     }
-//    @Test
-//    public void givenNumberShouldReturnOdd(){
-//        int n=121;
-//        result=evenNumber.isEven(n);
-//        assertEquals("The given number is odd",true,result);
-//    }
 
 }
